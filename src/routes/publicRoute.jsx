@@ -1,0 +1,15 @@
+import React from 'react';
+import { UserAuth } from '../context/AuthContext';
+import { Navigate } from 'react-router-dom';
+
+const PublicRoute = ({ children }) => {
+  const { session } = UserAuth();
+
+  if (session === undefined) {
+    return <p>Cargando...</p>;
+  }
+
+  return <>{!session ? <>{children}</> : <Navigate to='/dashboard' />}</>;
+};
+
+export default PublicRoute;

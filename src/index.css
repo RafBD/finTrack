@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+
+@theme {
+  --font-geom: "Geom", sans-serif;
+  --font-patua-one: "Patua One", serif;
+  --font-days-one: "Days One", sans-serif;
+}
